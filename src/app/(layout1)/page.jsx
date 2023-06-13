@@ -7,7 +7,7 @@ export default async function Home() {
   return (
     <>
       {data.map((item) => (
-        <Link className="item" href={`/product/${item.id}`}>
+        <Link className="item" href={`/product/${item.id}`} key={item.id}>
           <div className="item-img">
             <img src={item.thumbnail} alt="" />
           </div>

@@ -1,0 +1,28 @@
+.spotlight-slide {
+  height: fit-content;
+}
+.spotlight-slide a {
+  text-decoration: unset;
+  color: unset;
+}
+.spotlight-slide .swiper {
+  height: 400px;
+  padding: 5px;
+}
+.spotlight-slide .swiper-wrapper {
+}
+.spotlight-slide .swiper-slide {
+  width: 100%;
+  height: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spotlight-slide .swiper-pagination {
+  top: 95%;
+  z-index: 999;
+}
+.spotlight-slide .swiper-button-prev,
+.spotlight-slide .swiper-button-next {
+  z-index: 888;
+}

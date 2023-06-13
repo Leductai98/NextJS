@@ -11,6 +11,7 @@ export default function PostItem({ data, users, skip }) {
         <div
           className="col-12 col-sm-6 col-lg-4"
           style={{ marginBottom: "30px" }}
+          key={index}
         >
           <Link href={`/posts/${item.id}`} className={styles["post-item"]}>
             <div className={styles["post-picture"]}>

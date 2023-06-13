@@ -31,6 +31,7 @@ export default async function PostList({ params: { pageid } }) {
               className={`${styles["btn-page"]} ${
                 pageid == index + 1 ? `${styles.active}` : ""
               }`}
+              key={index}
             >
               {index + 1}
             </Link>

@@ -32,8 +32,10 @@ export default async function DetailPage({ params: { postid } }) {
       </div>
       <div className={styles["tag-list"]}>
         <span>tags:</span>
-        {post.tags.map((tag) => (
-          <div className={styles["tag-item"]}>{tag}</div>
+        {post.tags.map((tag, index) => (
+          <div className={styles["tag-item"]} key={index}>
+            {tag}
+          </div>
         ))}
       </div>
       <h5>Content</h5>
@@ -46,6 +48,7 @@ export default async function DetailPage({ params: { postid } }) {
           <div
             className="col-12 col-sm-6 col-lg-4"
             style={{ display: "flex", justifyContent: "center" }}
+            key={commentIndex}
           >
             <div className={styles["comment-item"]}>
               <div className={styles["comment-item-user"]}>
